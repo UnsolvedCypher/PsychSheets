@@ -10,37 +10,75 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        Profile matt = new Profile("2012MCMI01");
+
+        /*
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 300, 275));
-        primaryStage.show();
+        primaryStage.show(); */
     }
 
-    public String eventCodeOf(String eventName) {
+    // using names as specified in the pb section of WCA results pages
+    public static String officialNameOf(String eventName) {
         switch(eventName) {
+            case "2x2x2 Cube":
             case "2x2":
-                return "222";
+                return "2x2x2 Cube";
+            case "Rubik's Cube":
             case "3x3":
-                return "333";
+                return "Rubik's Cube";
+            case "4x4x4 Cube":
             case "4x4":
-                return "4x4";
+                return "4x4x4 Cube";
+            case "5x5x5 Cube":
             case "5x5":
-                return "555";
+                return "5x5x5 Cube";
+            case "6x6x6 Cube":
             case "6x6":
-                return "666";
+                return "6x6x6 Cube";
+            case "7x7x7 Cube":
             case "7x7":
-                return "777";
+                return "7x7x7 Cube";
+            case "3x3x3 Fewest Moves":
             case "FMC":
-                return "333fm";
-            case "Multi":
-                return "333mbf";
+                return "3x3x3 Fewest Moves";
+            case "3x3x3 Multi-Blind":
+            case "MBLD":
+                return "3x3x3 Multi-Blind";
+            case "3x3x3 With Feet":
             case "Feet":
-                return "333ft";
-            case "3BLD":
-                return "333bf";
-            case "FMC":
-                return "333fm";
-            
+                return "3x3x3 With Feet";
+            case "3x3x3 One-Handed":
+            case "OH":
+                return "3x3x3 One-Handed";
+            case "3x3x3 Blindfolded":
+            case "BLD":
+                return "3x3x3 Blindfolded";
+            case "4x4x4 Blindfolded":
+            case "4-BLD":
+                return "4x4x4 Blindfolded";
+            case "5x5x5 Blindfolded":
+            case "5-BLD":
+                return "5x5x5 Blindfolded";
+            case "Rubik's Clock":
+            case "Clock":
+                return "Rubik's Clock";
+            case "Megaminx":
+            case "Mega":
+                return "Megaminx";
+            case "Skewb":
+                return "Skewb";
+            case "Square-1":
+            case "Sq-1":
+                return "Square-1";
+            case "Pyraminx":
+            case "Pyra":
+                return "Pyraminx";
+            default:
+                System.out.println("unable to get name for " + eventName);
+                return null;
+
         }
     }
 

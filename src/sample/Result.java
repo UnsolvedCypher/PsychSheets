@@ -1,7 +1,5 @@
 package sample;
 
-import javafx.util.StringConverter;
-
 public abstract class Result implements Comparable<Result> {
     boolean DNF = false, DNS = false;
 
