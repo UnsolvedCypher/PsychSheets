@@ -1,0 +1,33 @@
+package sample;
+
+public class FMCResult extends Result {
+    public FMCResult(String resultString) {
+        super(resultString);
+    }
+
+    @Override
+    void customParseResultString(String resultString) {
+        this.moves = Double.parseDouble(resultString);
+    }
+
+    private double moves;
+
+    @Override
+    public String customToString() {
+        if (moves % 1 == 0) {
+            return String.valueOf((int)moves);
+        } else {
+            return String.valueOf(moves);
+        }
+    }
+
+    @Override
+    double toGraphableValue() {
+        return moves;
+    }
+
+    @Override
+    public int customCompareTo(Result other) {
+        return new Double(this.moves).compareTo(new Double(((FMCResult)other).moves));
+    }
+}
