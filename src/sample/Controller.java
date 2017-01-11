@@ -24,7 +24,7 @@ public class Controller {
 
     public void initialize(){
 
-        Image img = new Image("C:\\Users\\JP\\Desktop\\hello.jpg");
+        //Image img = new Image("C:\\Users\\JP\\Desktop\\hello.jpg");
 
         compInput.setOnKeyPressed(e->{
 

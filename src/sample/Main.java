@@ -12,11 +12,10 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Profile matt = new Profile("2012MCMI01");
 
-        /*
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("PsychSheets.fxml"));
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
-        primaryStage.show(); */
+        primaryStage.setScene(new Scene(root, 640, 480));
+        primaryStage.show();
     }
 
     // using names as specified in the pb section of WCA results pages
