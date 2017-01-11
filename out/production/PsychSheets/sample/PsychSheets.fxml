@@ -13,6 +13,10 @@
       <TextField fx:id="compInput" layoutX="13.0" layoutY="14.0" prefHeight="25.0" prefWidth="615.0" promptText="What competition are you looking for?" visible="false" />
       <Button fx:id="searchButton" layoutX="294.0" layoutY="59.0" mnemonicParsing="false" onAction="#compName" text="Search" visible="false" />
       <ChoiceBox fx:id="eventBox" layoutX="246.0" layoutY="14.0" prefWidth="150.0" />
-      <VBox fx:id="rankingBox" layoutX="244.0" layoutY="59.0" prefHeight="415.0" prefWidth="150.0" visible="false" />
+      <VBox fx:id="rankingVBox" layoutX="195.0" layoutY="50.0" prefHeight="415.0" prefWidth="250.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="250.0" />
+         </children></VBox>
+      <VBox fx:id="timesVBox" layoutX="445.0" layoutY="50.0" prefHeight="415.0" prefWidth="100.0" />
    </children>
 </Pane>
