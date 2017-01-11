@@ -3,10 +3,7 @@ package sample;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
@@ -34,12 +31,16 @@ public class Controller {
     @FXML
     VBox rankingVBox,timesVBox;
 
+    @FXML
+    ScrollBar scrollBar;
+
     public void initialize(){
 
         eventBox.setVisible(false);
         searchButton.setVisible(true);
         compInput.setVisible(true);
         rankingVBox.setVisible(false);
+        scrollBar.setVisible(false);
 
         //Image img = new Image("C:\\Users\\JP\\Desktop\\hello.jpg");
 
@@ -99,7 +100,7 @@ public class Controller {
             times.setLayoutX(0);
             times.setLayoutY(numberOfCompetitors*40);
             times.setStroke(Color.BLACK);
-            
+
             timesVBox.getChildren().add(times);
 
         }
