@@ -2,8 +2,11 @@ package sample;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.shape.Rectangle;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -16,6 +19,15 @@ public class Main extends Application {
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 640, 480));
         primaryStage.show();
+
+        Rectangle2D primaryScreenBounds = Screen.getPrimary().getBounds();
+
+        primaryStage.setX(primaryScreenBounds.getMinX());
+        primaryStage.setY(primaryScreenBounds.getMinY());
+        primaryStage.setWidth(primaryScreenBounds.getWidth());
+        //The minus 40 is for my screen, but it needs to be changed to adjust to whatever screen
+        //I just can't figure it our rn, I'll try later
+        primaryStage.setHeight(primaryScreenBounds.getHeight()-40);
     }
 
     // using names as specified in the pb section of WCA results pages

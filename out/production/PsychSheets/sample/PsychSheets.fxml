@@ -11,11 +11,11 @@
 <Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Rectangle fx:id="BKG" arcHeight="5.0" arcWidth="5.0" fill="#14518a" height="480.0" stroke="BLACK" strokeType="INSIDE" width="640.0" />
-      <TextField fx:id="compInput" layoutX="13.0" layoutY="14.0" prefHeight="25.0" prefWidth="615.0" promptText="What competition are you looking for?" visible="false" />
-      <Button fx:id="searchButton" layoutX="294.0" layoutY="59.0" mnemonicParsing="false" onAction="#compName" text="Search" visible="false" />
+      <TextField fx:id="compInput" layoutX="15.0" layoutY="15.0" prefHeight="25.0" prefWidth="615.0" promptText="What competition are you looking for?" visible="false" />
+      <Button fx:id="searchButton" layoutX="295.0" layoutY="60.0" mnemonicParsing="false" onAction="#compName" text="Search" visible="false" />
       <ChoiceBox fx:id="eventBox" layoutX="245.0" layoutY="15.0" prefWidth="150.0" />
       <VBox fx:id="rankingVBox" layoutX="195.0" layoutY="50.0" prefHeight="415.0" prefWidth="250.0" />
       <VBox fx:id="timesVBox" layoutX="445.0" layoutY="50.0" prefHeight="415.0" prefWidth="100.0" />
-      <ScrollBar layoutX="628.0" orientation="VERTICAL" prefHeight="480.0" prefWidth="14.0" />
+      <ScrollBar fx:id="scrollBar" layoutX="628.0" orientation="VERTICAL" prefHeight="480.0" prefWidth="14.0" visible="false" />
    </children>
 </Pane>
